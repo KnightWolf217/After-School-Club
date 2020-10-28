@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Week 4</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <!-- app div -->
+    <div id="app">
+        <!-- heading -->
+        <h1 v-text="sitename"></h1>
+        <div style="float:left;">
+            <!-- image -->
+            <img v-bind:src="lesson.image">
+        </div>
+        <div style="float:left;">
+            <h2 v-text="lesson.title"></h2>
+            <p>{{lesson.location}}</p>
+            <p>Price: <span v-text="lesson.price">
+            </span>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        //vue instance
+        let app = new Vue({
+            el: '#app',
+            data: {
+                sitename: "After School Club",
+                //lesson object
+                lesson: {
+                    id: 1,
+                    title: "Math",
+                    location: "London",
+                    price: 100,
+                    image: "math.png"
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
