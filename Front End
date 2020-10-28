@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 4</title>
+</head>
+<body>
+    <!-- app div -->
+    <div id="app">
+        <!-- heading -->
+        <h1>After School Club</h1>
+        <div style="float:left;">
+            <!-- image -->
+            <img src="math.png">
+        </div>
+        <div style="float:left;">
+            <h2>Math</h2>
+            <p>London</p>
+            <p>Price: 100></p>
+        </div>
+    </div>
+    </body>
+</html>
