@@ -75,13 +75,13 @@
                     if ((phone.length == 10) & (name.length != 0) & (!/[^a-zA-Z]/.test(name)) & !isNaN(phone)) { //check if name is not empty and only letters, phone is 10 digits and only numbers
                         document.getElementById("checkout").style.display = "block"; //display the checkout button if name and phone are valid
                         document.getElementById("confirm").innerHTML = ""; //removing error message
-                        let bottom = document.getElementById("confirm");
-                        bottom.scrollIntoView();
+                        let bottom = document.getElementById("confirm"); 
+                        bottom.scrollIntoView(); //scrolling to the button
                     } else {
                         document.getElementById("confirm").innerHTML = "<p>Please enter a valid name and 10 digit phone number!</p>"; //display error message
                         document.getElementById("checkout").style.display = "none"; //removing checkout button if name and phone are invalid
-                        let bottom = document.getElementById("confirm");
-                        bottom.scrollIntoView();
+                        let bottom = document.getElementById("confirm"); 
+                        bottom.scrollIntoView(); //scrolling to the error message
                     }
                 },
                 order() {
@@ -96,8 +96,8 @@
                         document.getElementById('lessons').innerHTML += items;
                     };
                     let bottom = document.getElementById("confirm");
-                    bottom.scrollIntoView();
-                    alert("Order Submitted! Please click ok to see order details");
+                    bottom.scrollIntoView(); //scrolling to the order details div
+                    alert("Order Submitted! Please click ok to see order details"); //alerting the user that order is complete
                 }
             },
             beforeMount() { // add lessons from local storage to cart when the page loads
